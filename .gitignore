@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+*.elf
+
+# LOGS
+*.log
+*.zip
+
+# PDF and ODT
+*.pdf
+*.odt
+
