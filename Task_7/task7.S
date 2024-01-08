@@ -8,6 +8,13 @@ _start:
    csrw  mtvec, t0
    li    sp, 0x80005000    // setting stack pointer
 
+# #  Setting MSECPMP
+#    li    t2, 0x4
+#    csrs  mseccfg, t2
+
+#    li    t2, 0x1
+#    csrs  mseccfg, t2
+
 #  Setting PMP Regions address
    li    t0, 0x80001000
    srli  t0, t0, 2
